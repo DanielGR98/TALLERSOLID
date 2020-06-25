@@ -9,7 +9,7 @@ public class Postre {
     double precioParcial;
 	ArrayList<Aderezo> aderezos;
 	 public double calcularPrecioFinal(){
-			precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
+		precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
 	        return precioFinal;
 	    }
 	    public ArrayList<Aderezo> getAderezos() {
@@ -18,5 +18,12 @@ public class Postre {
 	    public String showPrecioFinal(){
 	        return "Precio Final: $ " + calcularPrecioFinal();
 	    }
+            public static void anadirAderezo(Postre postre,Aderezo aderezo){
+            postre.getAderezos().add(aderezo);
+            }
+    
+            public static void quitarAderezo(Postre postre,Aderezo aderezo){
+            postre.getAderezos().remove(aderezo);
+            }
 	    
 }
