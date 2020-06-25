@@ -28,7 +28,4 @@ public class Helado extends Postre{
         return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
     }
     
-
-    
-    
 }
