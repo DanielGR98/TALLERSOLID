@@ -5,8 +5,6 @@
  */
 package Procesos;
 
-import Leche.LecheDeslactosada;
-import Leche.LecheDescremada;
 import Leche.LecheEntera;
 import Postres.*;
 
@@ -21,7 +19,7 @@ public class ManejadorDeLeche {
         System.out.println(postre.getClass());
         System.out.println(Pastel.class);
         if(postre.getClass() == Pastel.class){
-            leche.usarPastel();
+      		leche.usarPastel();
         }else{
             leche.usarHelado();
         }
