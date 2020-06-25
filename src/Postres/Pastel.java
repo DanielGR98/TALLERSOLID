@@ -15,7 +15,7 @@ import Adicionales.Aderezo;
 public class Pastel extends Postre{
     private String sabor;
     private double precioParcial;
-    private ArrayList<Aderezo> aderezos;
+    //private ArrayList<Aderezo> aderezos;
     
     public Pastel(String sabor){
         aderezos= new ArrayList<>();
